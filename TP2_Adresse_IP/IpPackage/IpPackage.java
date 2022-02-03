@@ -9,8 +9,9 @@ public class IpPackage {
     this.D = D;
     }
 
-
-
+public void test() {
+System.out.println(this.getOctet1() +"."+this.getOctet2()+"."+this.getOctet3()+"."+this.getOctet4());
+}
 
    
 public int getOctet1(){
