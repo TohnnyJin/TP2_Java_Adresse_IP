@@ -2,6 +2,8 @@ package IpPackage;
 
 public class IpPackage {
 
+    
+
     private IpPackage(int o1,int o2,int o3,int o4) {
         this.o1 = o1;
         this.o2 = o2;
@@ -10,8 +12,9 @@ public class IpPackage {
     }
 
 public void test() {
-System.out.println(this.getOctet1() +"."+this.getOctet2()+"."+this.getOctet3()+"."+this.getOctet4());
-}  
+System.out.println("L'adresse IP est : "+this.getOctet1() +"."+this.getOctet2()+"."+this.getOctet3()+"."+this.getOctet4());
+} 
+
 
 public static IpPackage getInstance(int o1, int o2,int o3,int o4) {
     try 
@@ -33,8 +36,7 @@ public static IpPackage getInstance(int o1, int o2,int o3,int o4) {
 
     return new IpPackage(o1,o2,o3,o4);
 }
-    
-  
+
 public int getOctet1(){
 return this.o1;
 }
@@ -55,6 +57,19 @@ private int o1;
 private int o2;
 private int o3;
 private int o4;
-    
-    
+       
+public char getClasse(){
+if (this.o1 <= 126)
+    return 'A';
+if (this.o1 >= 126 && this.o1 <= 191)
+    return 'B'; 
+if (this.o1 >= 192 && this.o1 <= 223)
+    return 'C';
+return 0; 
+}       
+
+public IpPackage adresseReseau(){
+return null;
+}    
+       
 }
