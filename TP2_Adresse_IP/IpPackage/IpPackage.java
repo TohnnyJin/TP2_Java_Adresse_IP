@@ -69,7 +69,21 @@ return 0;
 }       
 
 public IpPackage adresseReseau(){
-return null;
-}    
-       
+return new IpPackage(this.o1, this.o2, this.o3, this.o4);
+}  
+
+public String ToString(){
+String String = (this.o1+"."+this.o2+"."+this.o3+"."+this.o4);
+return String;
 }
+       
+public boolean estMemeReseau (IpPackage ip){
+    if(this.adresseReseau().ToString().contentEquals(ip.adresseReseau().ToString())){
+        return true;
+    }
+    return false;
+
+    }
+}       
+       
+

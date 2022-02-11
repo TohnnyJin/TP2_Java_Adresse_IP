@@ -18,7 +18,7 @@ class IpTest {
 			System.out.println("\n\n");
 			System.out.println("Adresse reseau de l'adresse ip1  " + ip1.adresseReseau());
 			
-			/*
+			
 			// Adresse réseau des deux réseaux
 			System.out.println("Adresse reseau de l'adresse ip1  " + ip1.adresseReseau().ToString());
 			System.out.println("Adresse reseau de l'adresse ip2  " + ip2.adresseReseau().ToString());
@@ -30,7 +30,7 @@ class IpTest {
 			System.out.println("ip1 et ip2 meme reseau ? " + ip1.estMemeReseau(ip2));
 			System.out.println("ip1 et ip1 meme reseau ? " + ip1.estMemeReseau(ip1));
 			System.out.println("ip2 et ip2 meme reseau ? " + ip2.estMemeReseau(ip2));
-			*/
+			
 			}
 	
 }
